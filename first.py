@@ -49,3 +49,21 @@ else:
 	print("sorry!!")
 
 	      
+if ch == '3':
+	img_data=input("enter the data")
+	find_url = img_data.strip()
+	final2 = find_url.split()
+	for i in final2:
+		webbrowser.open_new_tab('https://www.google.com/images?q='+i)
+	
+
+if ch == '4':
+	Time_n_date=time.ctime()
+	print("the Current date and time is : ",Time_n_date)
+
+if ch == '5':
+	print("the dafault browser is")
+	url = ('https://www.google.com')
+	webbrowser.open(url)
+
+
