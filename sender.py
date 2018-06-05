@@ -3,8 +3,12 @@
 import  socket,time
 s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 
-t=time.time()+10
-while time.time()<t:
+t=0
+while t<10:
 	msg=raw_input("enter a message to send : ")
-	q=s.sendto(msg,("192.168.43.102",9999))
+	q=s.sendto(msg,("192.168.10.62",9999))
 	#print s.recvfrom(1000)
+	t=t+1
+
+	
+
